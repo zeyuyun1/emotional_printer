@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+</head>
+<style> 
+html, body {
+    margin: 0;
+    background-color: #f1f1f1;
+    font-family: sans-serif;
+}
+</style>
+<body>
+  
+    <div id="main"></div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
+<script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyDTR0kHZbEZmm0M4adTRwn-JxXNJo-VE9U",
+      authDomain: "art-172-final.firebaseapp.com",
+      databaseURL: "https://art-172-final.firebaseio.com",
+      projectId: "art-172-final",
+      storageBucket: "art-172-final.appspot.com",
+      messagingSenderId: "46919933931",
+      appId: "1:46919933931:web:63d92a09d4c186239ac3ae",
+      measurementId: "G-DYZZNSZYCY"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  //   firebase.analytics();
+    const db = firebase.firestore();
+    db.settings({ timestampsInSnapshots: true }); 
+  </script>
+<script src="scripts/display.js"></script>
+</html>
