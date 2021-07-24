@@ -16,6 +16,10 @@ function get_color(word) {
     document.getElementById("content").style.borderColor = '#f4e4e9';
     // document.getElementById("myTextarea").style.borderColor = 'white';
   }
+  function scroll_up() {
+    document.body.style.background = 'red';
+    document.body.scrollTop = 0;
+  }
   
   let container = {'content' : ''}
   function handleInput(e) {

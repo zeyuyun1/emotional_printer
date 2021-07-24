@@ -17,7 +17,7 @@ body{
     position: fixed;
     top: 0;
     bottom: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     }
   /* .top_text_folder{
     position: absolute;
@@ -115,8 +115,7 @@ body{
           background-color: #f1f;
           width: 60vw;
           height: 60vw;
-          top: 40vh; 
-          /* bottom: 5vh; */
+          top: 27vh; 
           margin: 0 auto;
       }
             textarea#myTextarea {
@@ -191,7 +190,7 @@ color: #bbbab3;
 </div>
 <div class="painting_input_wrapper">
     <div class="main_painting" id = "content"></div>
-    <TEXTAREA placeholder="Click to text here..." id="myTextarea" oninput="handleInput(event)" NAME="myTextarea"></TEXTAREA>
+    <TEXTAREA placeholder="Click to text here..." id="myTextarea" oninput="handleInput(event)" onclick="scroll_up()" NAME="myTextarea"></TEXTAREA>
     <button onclick="submit()">Submit</button>
 </div>
 <div id="foo"><p>Emotional Printer </p></div>
