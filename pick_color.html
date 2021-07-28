@@ -17,15 +17,30 @@ body{
     position: fixed;
     top: 0;
     bottom: 0;
-    font-family: 'Courier New', monospace;
     /* overflow: hidden; */
     }
-  /* .top_text_folder{
-    position: absolute;
-    width: 40%;
-    letter-spacing: 3px;
-  } */
-
+  .top_text_folder{
+        position: absolute;
+        width: 100%;
+        letter-spacing: 3px;
+        color: #947c81;
+        display:flex;
+      justify-content: center;
+      }
+    .wording{
+      display:flex;
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      letter-spacing: 3px;
+      /* font-size:xx-large; */
+      justify-content: center;
+      /* color: #947c81; */
+    }
+.bottom{
+  position: absolute;
+    bottom: 0;
+}
   @media (min-aspect-ratio: 8/3)  {
           .painting_input_wrapper {
           position: relative;
@@ -34,8 +49,6 @@ body{
           height: 20vw;
           top: 15vh;
           margin: 0 auto;
-          /* letter-spacing: 3px; */
-          color: #807f79;
       }
         textarea#myTextarea {
       position: relative;
@@ -43,22 +56,23 @@ body{
       width: 101%;
       height: 3vw;
       }
-       .top_text_folder{
-        position: absolute;
-        width: 40%;
-        letter-spacing: 3px;
-      }
+      .colorPicker{
+        position: relative;
+    width: 100%;
+    height: 100%;
+    /* width: 10%; */
+    top: 20%;
+    left: 15%;
+  }
     }
   @media (min-aspect-ratio: 8/5) and (max-aspect-ratio: 8/3)  {
           .painting_input_wrapper {
           position: relative;
           background-color: #f1f;
-          width: 30vw;
-          height: 30vw;
-          top: 20vh;
+          width: 33vw;
+          height: 33vw;
+          top: 15vh;
           margin: 0 auto;
-          /* letter-spacing: 3px; */
-          color: #807f79;
       }
             textarea#myTextarea {
           position: relative;
@@ -66,22 +80,23 @@ body{
           width: 101%;
           height: 4vw;
       }
-      .top_text_folder{
-                  position: absolute;
-                  width: 40%;
-                  letter-spacing: 3px;
-      }
+      .colorPicker{
+        position: relative;
+    width: 100%;
+    height: 100%;
+    /* width: 10%; */
+    top: 20%;
+    left: 25%;
+  }
     }
   @media (min-aspect-ratio: 8/6) and (max-aspect-ratio: 8/5)  {
           .painting_input_wrapper {
           position: relative;
           background-color: #f1f;
-          width: 40vw;
-          height: 40vw;
-          top: 23vh;
+          width: 50vw;
+          height: 50vw;
+          top: 15vh;
           margin: 0 auto;
-          /* letter-spacing: 3px; */
-          color: #807f79;
       }
             textarea#myTextarea {
           position: relative;
@@ -89,22 +104,23 @@ body{
           width: 101%;
           height: 6vw;
       }
-      .top_text_folder{
-            position: absolute;
-            width: 50%;
-            letter-spacing: 3px;
-      }
+      .colorPicker{
+        position: relative;
+    width: 100%;
+    height: 100%;
+    /* width: 10%; */
+    top: 20%;
+    left: 20%;
+  }
     }
     @media (min-aspect-ratio: 8/8) and (max-aspect-ratio: 8/6) {
-          .painting_input_wrapper {
+      .painting_input_wrapper {
           position: relative;
           background-color: #f1f;
-          width: 50vw;
-          height: 50vw;
-          top: 22vh;
+          width: 70vw;
+          height: 70vw;
+          top: 15vh;
           margin: 0 auto;
-          /* letter-spacing: 3px; */
-          color: #807f79;
       }
             textarea#myTextarea {
           position: relative;
@@ -112,58 +128,34 @@ body{
           width: 101%;
           height: 9vw;
       }
-      .top_text_folder{
-      position: absolute;
-      width: 60%;
-      letter-spacing: 3px;
-    }
+      .colorPicker{
+        position: relative;
+    width: 100%;
+    height: 100%;
+    /* width: 10%; */
+    top: 20%;
+    left: 20%;
+  }
     }
     @media (max-aspect-ratio: 8/8) {
-          .painting_input_wrapper {
+      .painting_input_wrapper {
           position: relative;
           background-color: #f1f;
-          width: 60vw;
-          height: 60vw;
-          top: 24vh; 
-          margin: 0 auto;
-          /* letter-spacing: 3px; */
-          color: #807f79;
-      }
-            textarea#myTextarea {
-          position: relative;
-          border: 2px solid #e4e7f4;
-          width: 101%;
-          height: 15vw;
-      }
-        .top_text_folder{
-      position: absolute;
-      width: 70%;
-      letter-spacing: 3px;
-    }
-    }
-
-    
-    /* @media (max-aspect-ratio: 8/6) and {
-          .painting_input_wrapper {
-          position: relative;
-          background-color: #f1f;
-          width: 40vw;
-          height: 40vw;
-          top: 10vw;
+          width: 90vw;
+          height: 90vw;
+          top: 15vh;
           margin: 0 auto;
       }
-    } */
-
-  /* @media not all and (min-aspect-ratio: 8/6) {
-        .painting_input_wrapper {
+      .colorPicker{
         position: relative;
-        background-color: #34b46d;
-        width: 50vw;
-        height: 50vw;
-        top: 10vw;
-        margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    /* width: 10%; */
+    top: 20%;
+    left: 20%;
+  }
     }
-  } */
+
   
 
 #foo {
@@ -184,28 +176,20 @@ body{
 
   p {
 color: #bbbab3;
-font-size:20px;
 }
 </style>
 <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script> -->
 <!-- <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script> -->
 </head>
 <body>
-<!-- <script src="data.js"></script>
-<script src="main.js"></script> -->
-<div class="top_text_folder">
-<p>why can't we create a place that loves for love, <span style='color:#373b41;'>█ </span><span style='color:#9c8245;'>█ </span><span style='color:#373b41;'>█ </span>
-  ?</p>
-  <!-- <p><a href="chat.html">Chat</a></p> -->
-  <p><a href="gallery.html">Gallery</a></p>
-  <p> size: <input type="range" name="quantity" id="fsize" min="10" max="200" onchange="changeSize(this.value)"> </p>
-  <p> color: <input type="range" name="quantity" min="0" max="99" value = "0" onchange="change_color(this.value)"> </p>
-</div>
 <div class="painting_input_wrapper">
-    <div class="main_painting" id = "content"></div>
-    <TEXTAREA placeholder="Click to text here..." id="myTextarea" oninput="handleInput()" NAME="myTextarea"></TEXTAREA>
-    <button onclick="submit()">Submit</button>
+    <div class="main_painting" id = "content"> <div class = "top_text_folder">What color is this word?</div> 
+     <div class = "wording" id = "word"> apple </div> <div class="colorPicker"></div>
+     <div class = "bottom">  <button onclick="attach_word()">Confirm</button> </div> </div>
+     <!-- <input name="clr" type="color"> -->
 </div>
 <div id="foo"><p>Emotional Printer </p></div>
 <!-- <button onclick="submit()">Submit</button> -->
@@ -229,15 +213,8 @@ font-size:20px;
   const db = firebase.firestore();
   db.settings({ timestampsInSnapshots: true }); 
 </script>
-<!-- <script src="scripts/color.js"></script> -->
-<script src="scripts/thresholds.js"></script>
-<script src="scripts/data.js"></script>
-
-<script src="scripts/data_cov.js"></script>
+<script src="scripts/color.js"></script>
 <script src="scripts/main.js"></script>
-<script>window.setInterval(function() {
-  changeBodyBack()
-}, 4000);
-</script>
+
 </body>
 </html>
