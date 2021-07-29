@@ -47,6 +47,7 @@ body{
         position: absolute;
         width: 40%;
         letter-spacing: 3px;
+        color: #bbbab3;
       }
     }
   @media (min-aspect-ratio: 8/5) and (max-aspect-ratio: 8/3)  {
@@ -70,6 +71,7 @@ body{
                   position: absolute;
                   width: 40%;
                   letter-spacing: 3px;
+                  color: #bbbab3;
       }
     }
   @media (min-aspect-ratio: 8/6) and (max-aspect-ratio: 8/5)  {
@@ -93,6 +95,7 @@ body{
             position: absolute;
             width: 50%;
             letter-spacing: 3px;
+            color: #bbbab3;
       }
     }
     @media (min-aspect-ratio: 8/8) and (max-aspect-ratio: 8/6) {
@@ -116,6 +119,7 @@ body{
       position: absolute;
       width: 60%;
       letter-spacing: 3px;
+      color: #bbbab3;
     }
     }
     @media (max-aspect-ratio: 8/8) {
@@ -138,7 +142,11 @@ body{
         .top_text_folder{
       position: absolute;
       width: 70%;
+      color: #bbbab3;
+      /* font-size: 1px; */
+      /* font-size: xx-small; */
       letter-spacing: 3px;
+      /* size: 1px; */
     }
     }
 
@@ -170,6 +178,7 @@ body{
     position: fixed;
     bottom: 0;
     right: 0;
+    color: #bbbab3;
     letter-spacing: 3px;
   }
   .main_painting { 
@@ -182,10 +191,10 @@ body{
     word-break:break-all;
   }
 
-  p {
+  /* p {
 color: #bbbab3;
 font-size:20px;
-}
+} */
 </style>
 <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
@@ -195,12 +204,13 @@ font-size:20px;
 <!-- <script src="data.js"></script>
 <script src="main.js"></script> -->
 <div class="top_text_folder">
-<p>why can't we create a place that loves for love, <span style='color:#373b41;'>█ </span><span style='color:#9c8245;'>█ </span><span style='color:#373b41;'>█ </span>
-  ?</p>
+why can't we create a place that loves for love, <span style='color:#373b41;'>█ </span><span style='color:#9c8245;'>█ </span><span style='color:#373b41;'>█ </span>
+  ?
   <!-- <p><a href="chat.html">Chat</a></p> -->
-  <p><a href="gallery.html">Gallery</a></p>
   <p> size: <input type="range" name="quantity" id="fsize" min="10" max="200" onchange="changeSize(this.value)"> </p>
   <p> color: <input type="range" name="quantity" min="0" max="99" value = "0" onchange="change_color(this.value)"> </p>
+  <br>
+  <p><a href="gallery.html">Gallery</a></p>
 </div>
 <div class="painting_input_wrapper">
     <div class="main_painting" id = "content"></div>
